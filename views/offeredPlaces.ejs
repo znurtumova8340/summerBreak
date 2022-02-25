@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('includes/head') %>
+  <link rel="stylesheet" href="/places.css"/>
+</head>
+<body>
+  <%- include('includes/header') %>
+  <%- include('includes/side-drawer') %>
+  <main>
+    <h1>Shared Places</h1>
+    <% if (!places || places.length===0) { %>
+      <p>Unfortunately, we dont have any locations avaliable. </p>
+      <p>Please add your idea.</p>
+      <% } else { %>
+        <p>We found <%= places.length %> locations to consider. </p>
+        <ul id="place-list">
+          <% for (const place of places) { %>
+          <%- include('includes/places/place-location', {place: place})%> 
+            <% } %>
+        </ul>
+        <% } %>
+  </main>
+</body>
+</html>

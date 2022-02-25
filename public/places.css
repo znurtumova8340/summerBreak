@@ -1,0 +1,61 @@
+main {
+    max-width: 40rem;
+  }
+  
+  #place-list {
+    list-style: none;
+    margin: 2rem 0;
+    padding: 0;
+  }
+  
+  .place-item {
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    background-color: rgb(178, 199, 198);
+    color: rgb(95,4,57);
+    text-align: left;
+  }
+  
+  .place-item h2 {
+    font-family: 'Roboto Condensed', 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    margin: 0.25rem 0;
+  }
+  
+  .place-item p {
+    margin: 0.2rem 0;
+    color: rgb(95,4,57);
+  }
+  
+  .place-meta {
+    margin-bottom: 0.5rem;
+  }
+  
+  .place-meta p {
+    color: rgb(rgb(133, 122, 122));
+  }
+  
+  .place-actions {
+    margin-top: 1rem;
+    text-align: right;
+  }
+  
+  .place-actions a,
+  .btn {
+    padding: 0.5rem 1.5rem;
+    background-color: rgb(95,4,57);
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .place-actions a:hover,
+  .place-actions a:active,
+  .btn:hover {
+    background-color: rgb(139, 41, 98);
+  }
+  

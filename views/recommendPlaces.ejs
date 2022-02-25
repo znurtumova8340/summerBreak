@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('includes/head') %>
+    <link rel="stylesheet" href="recommend.css" />
+  </head>
+  <body>
+    <%- include('includes/header') %>
+    <%- include('includes/side-drawer') %>
+    <main>
+      <h1>Share this amazing Place!</h1>
+      <form action="/recommendPlaces" method="POST">
+        <div class="form-control">
+          <label for="name">Place type</label>
+          <input type="text" id="name" name="name" 
+          placeholder="e.g. Beach House"
+          required />
+        </div>
+        <div class="form-control">
+          <label for="address">Location</label>
+          <input type="text" id="address" name="address"
+          placeholder="e.g. Austin, Texas"
+           required />
+        </div>
+        <div class="form-control">
+          <label for="price">Average Price</label>
+          <input
+            type="text"
+            id="price"
+            name="price"
+            placeholder="e.g. $800/night"
+            required
+          />
+        </div>
+        <div class="form-control">
+          <label for="website">Place website</label>
+          <input type="url" id="website" name="website" />
+        </div>
+        <div class="form-control">
+          <label for="description">Why do you recommend it?</label>
+          <textarea
+            name="description"
+            id="description"
+            rows="8"
+            required
+          ></textarea>
+        </div>
+        <button>Share the Place</button>
+      </form>
+    </main>
+  </body>
+</html>

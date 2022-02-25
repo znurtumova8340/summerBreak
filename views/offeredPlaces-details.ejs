@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('includes/head') %>
+  <link rel="stylesheet" href="/places.css"/>
+</head>
+<body>
+  <%- include('includes/header') %>
+  <%- include('includes/side-drawer') %>
+  <main>
+  <section>
+    <h1><%=place.name %></h1>
+    <p><%= place.address %></p>  
+    <p><%= place.price %></p>
+    <p><%= place.description %></p>
+    <p><a href="<%= place.website %>">View Website</a></p>
+  </section>
+</main>
+</body>
+</html>
+

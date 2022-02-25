@@ -1,0 +1,21 @@
+<li class="place-item">
+    <article>
+      <h2>
+        <%= place.name %>
+      </h2>
+      <div class="place-meta">
+        <p>
+          <%= place.address %>
+        </p>
+        <p>
+          <%= place.price %>
+        </p>
+      </div>
+      <p>
+        <%= place.description %>
+      </p>
+      <div class="place-actions">
+        <a class="btn" href="/offeredPlaces/<%= place.id %>">View Place</a>
+      </div>
+    </article>
+  </li>
